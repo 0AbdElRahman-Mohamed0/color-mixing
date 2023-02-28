@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="color_mixing.color_mixing">
+    package="app.example.color_mixing">
    <application
         android:label="Color Mixing"
         android:name="${applicationName}"

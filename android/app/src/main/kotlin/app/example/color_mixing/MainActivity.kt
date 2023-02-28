@@ -1,4 +1,4 @@
-package color_mixing.color_mixing
+package app.example.color_mixing
 
 import io.flutter.embedding.android.FlutterActivity
 
