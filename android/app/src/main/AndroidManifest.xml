@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="color_mixing.color_mixing">
    <application
-        android:label="color_mixing"
+        android:label="Color Mixing"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
