@@ -5,6 +5,7 @@ class AppTheme {
   /// get Theme
   static ThemeData get theme => ThemeData(
         brightness: Brightness.light,
+        shadowColor: const Color(0xFF000000),
         fontFamily: 'Open_Sans',
         textTheme: const TextTheme(
           headlineMedium: TextStyle(

@@ -1,5 +1,6 @@
 import 'package:color_mixing/utils/color_mixer.dart';
 import 'package:color_mixing/utils/dimensions.dart';
+import 'package:color_mixing/view/widgets/text_with_shadow.dart';
 import 'package:flutter/material.dart';
 
 /// First Screen of the app starts after splash screen
@@ -19,26 +20,18 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       backgroundColor: _backgroundColor,
       appBar: AppBar(
-        title: Text(
-          'Color Mixing',
-          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                fontSize: Dimensions.fontSizeLarge,
-                fontWeight: FontWeight.w600,
-              ),
-        ),
+        title: const TextWithShadow(text: 'Color Mixing'),
         backgroundColor: _backgroundColor,
       ),
       body: InkWell(
         onTap: () => setState(() {
           _backgroundColor = ColorMixer.color;
         }),
-        child: Center(
-          child: Text(
-            'Hey There',
-            style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                  fontSize: Dimensions.fontSizeDefault,
-                  fontWeight: FontWeight.w600,
-                ),
+        child: const Center(
+          child: TextWithShadow(
+            text: 'Hey There',
+            fontSize: Dimensions.fontSizeDefault,
+            fontWeight: FontWeight.w600,
           ),
         ),
       ),

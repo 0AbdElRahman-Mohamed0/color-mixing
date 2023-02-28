@@ -1,5 +1,5 @@
 import 'package:color_mixing/utils/app_theme.dart';
-import 'package:color_mixing/view/main_screen.dart';
+import 'package:color_mixing/view/screens/main_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
