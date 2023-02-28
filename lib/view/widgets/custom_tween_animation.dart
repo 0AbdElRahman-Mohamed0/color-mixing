@@ -21,7 +21,7 @@ class CustomTweenAnimation extends StatelessWidget {
   Widget build(BuildContext context) {
     return TweenAnimationBuilder(
       tween: Tween<double>(begin: 0, end: 1),
-      duration: const Duration(milliseconds: 500),
+      duration: const Duration(milliseconds: 1000),
       builder: (BuildContext context, double val, Widget? child) {
         return Opacity(
           opacity: val,
