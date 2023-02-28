@@ -1,3 +1,4 @@
+import 'package:color_mixing/utils/app_theme.dart';
 import 'package:color_mixing/view/main_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,10 +14,11 @@ class Main extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Color Mixing',
       debugShowCheckedModeBanner: false,
-      home: MainScreen(),
+      theme: AppTheme.theme,
+      home: const MainScreen(),
     );
   }
 }
