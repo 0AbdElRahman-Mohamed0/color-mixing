@@ -12,7 +12,10 @@ class TextWithShadow extends StatelessWidget {
   /// Font weight of that text and if not declared there is a default value
   final FontWeight? fontWeight;
 
-  /// Constructor of class
+  /// Constructor of text with shadow
+  /// The [text] argument must not be null.
+  /// The [fontSize] and [fontWeight] can be null and it will use default
+  /// value of them.
   const TextWithShadow({
     Key? key,
     required this.text,

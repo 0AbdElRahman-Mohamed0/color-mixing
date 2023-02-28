@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 /// Theme of the app
 class AppTheme {
-  /// get Theme
+  /// get Theme of app
   static ThemeData get theme => ThemeData(
         brightness: Brightness.light,
         shadowColor: const Color(0xFF000000),

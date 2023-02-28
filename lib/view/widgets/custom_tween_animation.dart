@@ -10,7 +10,10 @@ class CustomTweenAnimation extends StatelessWidget {
   /// from bottom to top
   final bool fromBottom;
 
-  /// Constructor of animation
+  /// Constructor of custom tween animation
+  /// The [child] argument must not be null.
+  /// The [fromBottom] can be null and it will use default
+  /// value of false.
   const CustomTweenAnimation({
     Key? key,
     required this.child,
