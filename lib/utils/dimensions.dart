@@ -11,4 +11,7 @@ class Dimensions {
 
   /// Image size
   static const double imageSize = 80;
+
+  /// Tween animation value
+  static const double tweenAnimationValue = 20;
 }

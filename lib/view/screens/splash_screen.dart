@@ -1,6 +1,7 @@
 import 'package:color_mixing/utils/app_constants.dart';
 import 'package:color_mixing/utils/dimensions.dart';
 import 'package:color_mixing/view/screens/main_screen.dart';
+import 'package:color_mixing/view/widgets/custom_tween_animation.dart';
 import 'package:flutter/material.dart';
 
 /// Splash screen of the app
@@ -38,17 +39,22 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              'assets/images/logo.png',
-              height: Dimensions.imageSize,
-              width: Dimensions.imageSize,
+            CustomTweenAnimation(
+              child: Image.asset(
+                'assets/images/logo.png',
+                height: Dimensions.imageSize,
+                width: Dimensions.imageSize,
+              ),
             ),
             const SizedBox(
               height: 20,
             ),
-            Text(
-              AppConstants.appName,
-              style: Theme.of(context).textTheme.headlineLarge,
+            CustomTweenAnimation(
+              fromBottom: true,
+              child: Text(
+                AppConstants.appName,
+                style: Theme.of(context).textTheme.headlineLarge,
+              ),
             )
           ],
         ),

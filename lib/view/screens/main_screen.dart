@@ -1,6 +1,7 @@
 import 'package:color_mixing/utils/app_constants.dart';
 import 'package:color_mixing/utils/color_mixer.dart';
 import 'package:color_mixing/utils/dimensions.dart';
+import 'package:color_mixing/view/widgets/custom_tween_animation.dart';
 import 'package:color_mixing/view/widgets/text_with_shadow.dart';
 import 'package:flutter/material.dart';
 
@@ -40,15 +41,17 @@ class _MainScreenState extends State<MainScreen> {
           ),
         ],
       ),
-      body: InkWell(
-        onTap: () => setState(() {
-          _backgroundColor = ColorMixer.color;
-        }),
-        child: const Center(
-          child: TextWithShadow(
-            text: 'Hey There',
-            fontSize: Dimensions.fontSizeDefault,
-            fontWeight: FontWeight.w600,
+      body: CustomTweenAnimation(
+        child: InkWell(
+          onTap: () => setState(() {
+            _backgroundColor = ColorMixer.color;
+          }),
+          child: const Center(
+            child: TextWithShadow(
+              text: 'Hey There',
+              fontSize: Dimensions.fontSizeDefault,
+              fontWeight: FontWeight.w600,
+            ),
           ),
         ),
       ),
