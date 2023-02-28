@@ -22,6 +22,22 @@ class _MainScreenState extends State<MainScreen> {
       appBar: AppBar(
         title: const TextWithShadow(text: 'Color Mixing'),
         backgroundColor: _backgroundColor,
+        actions: [
+          IconButton(
+            onPressed: () => setState(() {
+              _backgroundColor = ColorMixer.color;
+            }),
+            icon: const Icon(
+              Icons.color_lens_outlined,
+              shadows: [
+                BoxShadow(
+                  blurRadius: Dimensions.blurRadius,
+                  offset: Offset.zero,
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
       body: InkWell(
         onTap: () => setState(() {
