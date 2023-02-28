@@ -1,3 +1,4 @@
+import 'package:color_mixing/utils/app_constants.dart';
 import 'package:color_mixing/utils/color_mixer.dart';
 import 'package:color_mixing/utils/dimensions.dart';
 import 'package:color_mixing/view/widgets/text_with_shadow.dart';
@@ -20,7 +21,7 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       backgroundColor: _backgroundColor,
       appBar: AppBar(
-        title: const TextWithShadow(text: 'Color Mixing'),
+        title: const TextWithShadow(text: AppConstants.appName),
         backgroundColor: _backgroundColor,
         actions: [
           IconButton(

@@ -1,5 +1,6 @@
+import 'package:color_mixing/utils/app_constants.dart';
 import 'package:color_mixing/utils/app_theme.dart';
-import 'package:color_mixing/view/screens/main_screen.dart';
+import 'package:color_mixing/view/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,10 +16,10 @@ class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Color Mixing',
+      title: AppConstants.appName,
       debugShowCheckedModeBanner: false,
       theme: AppTheme.theme,
-      home: const MainScreen(),
+      home: const SplashScreen(),
     );
   }
 }

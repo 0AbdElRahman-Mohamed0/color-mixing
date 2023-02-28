@@ -13,6 +13,11 @@ class AppTheme {
             fontWeight: FontWeight.w400,
             color: Color(0xFFFFFFFF),
           ),
+          headlineLarge: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w400,
+            color: Color(0xFF000000),
+          ),
         ),
       );
 }
