@@ -17,6 +17,12 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   Color _backgroundColor = ColorMixer.color;
 
+  void _changeColor() {
+    setState(() {
+      _backgroundColor = ColorMixer.color;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,9 +32,7 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: _backgroundColor,
         actions: [
           IconButton(
-            onPressed: () => setState(() {
-              _backgroundColor = ColorMixer.color;
-            }),
+            onPressed: _changeColor,
             icon: const Icon(
               Icons.color_lens_outlined,
               shadows: [
@@ -43,9 +47,7 @@ class _MainScreenState extends State<MainScreen> {
       ),
       body: CustomTweenAnimation(
         child: InkWell(
-          onTap: () => setState(() {
-            _backgroundColor = ColorMixer.color;
-          }),
+          onTap: _changeColor,
           child: const Center(
             child: TextWithShadow(
               text: 'Hey There',
