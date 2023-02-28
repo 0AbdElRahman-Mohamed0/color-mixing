@@ -23,11 +23,12 @@ class _SplashScreenState extends State<SplashScreen> {
     await Future<void>.delayed(const Duration(seconds: 2));
     if (!mounted) return;
     await Navigator.pushAndRemoveUntil<MainScreen>(
-        context,
-        MaterialPageRoute(
-          builder: (_) => const MainScreen(),
-        ),
-        (route) => false);
+      context,
+      MaterialPageRoute(
+        builder: (_) => const MainScreen(),
+      ),
+      (route) => false,
+    );
   }
 
   @override
