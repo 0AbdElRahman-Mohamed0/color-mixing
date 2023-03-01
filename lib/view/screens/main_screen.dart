@@ -45,10 +45,10 @@ class _MainScreenState extends State<MainScreen> {
           ),
         ],
       ),
-      body: CustomTweenAnimation(
-        child: InkWell(
-          onTap: _changeColor,
-          child: const Center(
+      body: InkWell(
+        onTap: _changeColor,
+        child: const Center(
+          child: CustomTweenAnimation(
             child: TextWithShadow(
               text: 'Hey There',
               fontSize: Dimensions.fontSizeDefault,
